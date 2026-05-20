@@ -32,32 +32,38 @@ export default function Contato() {
                 
                 <div className="space-y-8">
                   <div className="flex items-start gap-4">
-                    <div className="bg-mastertop-blue/10 p-4 rounded-xl text-mastertop-gold">
+                    <div className="bg-mastertop-blue/10 p-4 rounded-xl text-mastertop-gold shrink-0">
                       <MapPin size={24} />
                     </div>
                     <div>
                       <h3 className="font-heading font-semibold text-lg text-mastertop-dark">Endereço Principal</h3>
-                      <p className="text-slate-600 mt-1 font-sans">Av. Principal, 1000 - Centro Empresarial<br/>São Paulo - SP</p>
+                      <p className="text-slate-600 mt-1 font-sans text-sm sm:text-base">
+                        Av. Ayrton Senna, n° 831, SL 04, Petrópolis<br/>Dias D'Ávila/BA - CEP: 42850-000
+                      </p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="bg-mastertop-blue/10 p-4 rounded-xl text-mastertop-gold">
+                    <div className="bg-mastertop-blue/10 p-4 rounded-xl text-mastertop-gold shrink-0">
                       <Phone size={24} />
                     </div>
                     <div>
                       <h3 className="font-heading font-semibold text-lg text-mastertop-dark">Telefone / WhatsApp</h3>
-                      <p className="text-slate-600 mt-1 font-sans">(11) 99999-9999</p>
+                      <a href="tel:+5571992009443" className="block text-slate-600 mt-1 font-sans text-sm sm:text-base hover:text-mastertop-blue transition-colors">
+                        +55 (71) 9 9200-9443
+                      </a>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="bg-mastertop-blue/10 p-4 rounded-xl text-mastertop-gold">
+                    <div className="bg-mastertop-blue/10 p-4 rounded-xl text-mastertop-gold shrink-0">
                       <Mail size={24} />
                     </div>
                     <div>
                       <h3 className="font-heading font-semibold text-lg text-mastertop-dark">E-mail</h3>
-                      <p className="text-slate-600 mt-1 font-sans">contato@mastertop.com.br</p>
+                      <a href="mailto:contato@mastertop.com.br" className="block text-slate-600 mt-1 font-sans text-sm sm:text-base hover:text-mastertop-blue transition-colors">
+                        contato@mastertop.com.br
+                      </a>
                     </div>
                   </div>
                 </div>

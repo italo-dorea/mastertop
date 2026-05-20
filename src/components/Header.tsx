@@ -1,12 +1,17 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, Phone, Mail } from "lucide-react";
+import { Menu, X, Phone, Mail } from "lucide-react";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header className="absolute top-0 left-0 w-full z-50 text-mastertop-dark font-sans">
       {/* Topbar */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center border-b border-slate-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center bg-white/80 backdrop-blur-sm md:bg-transparent md:backdrop-blur-none border-b border-slate-200">
         {/* Logo */}
         <Link href="/" className="hover:opacity-90 transition-opacity bg-white p-2 rounded-lg shadow-sm">
           <Image 
@@ -50,12 +55,86 @@ export default function Header() {
           </a>
         </div>
         
-        <button className="md:hidden p-2 hover:text-mastertop-gold">
-          <Menu size={28} />
+        <button 
+          onClick={() => setIsOpen(!isOpen)} 
+          className="md:hidden p-2 hover:text-mastertop-gold transition-colors focus:outline-none"
+          aria-label={isOpen ? "Fechar menu" : "Abrir menu"}
+        >
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
-      {/* Main Nav Bar (Blue and Gray) */}
+      {/* Mobile Nav Bar Dropdown */}
+      {isOpen && (
+        <div className="md:hidden bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-lg animate-fade-in-up duration-300">
+          <div className="px-4 pt-2 pb-6 space-y-3 font-heading font-bold text-[0.9rem] uppercase tracking-wider">
+            <Link 
+              href="/" 
+              onClick={() => setIsOpen(false)}
+              className="block py-2.5 px-4 rounded-xl hover:bg-mastertop-blue/5 text-mastertop-dark hover:text-mastertop-blue transition-all"
+            >
+              Home
+            </Link>
+            <Link 
+              href="/institucional" 
+              onClick={() => setIsOpen(false)}
+              className="block py-2.5 px-4 rounded-xl hover:bg-mastertop-blue/5 text-mastertop-dark hover:text-mastertop-blue transition-all"
+            >
+              Institucional
+            </Link>
+            <Link 
+              href="/obras" 
+              onClick={() => setIsOpen(false)}
+              className="block py-2.5 px-4 rounded-xl hover:bg-mastertop-blue/5 text-mastertop-dark hover:text-mastertop-blue transition-all"
+            >
+              Obras
+            </Link>
+            <Link 
+              href="/servicos" 
+              onClick={() => setIsOpen(false)}
+              className="block py-2.5 px-4 rounded-xl hover:bg-mastertop-blue/5 text-mastertop-dark hover:text-mastertop-blue transition-all"
+            >
+              Serviços
+            </Link>
+            <Link 
+              href="/trabalhe-conosco" 
+              onClick={() => setIsOpen(false)}
+              className="block py-2.5 px-4 rounded-xl hover:bg-mastertop-blue/5 text-mastertop-dark hover:text-mastertop-blue transition-all"
+            >
+              Trabalhe Conosco
+            </Link>
+            <Link 
+              href="/contato" 
+              onClick={() => setIsOpen(false)}
+              className="block py-2.5 px-4 rounded-xl bg-mastertop-blue text-white text-center hover:bg-mastertop-blue/90 shadow-sm transition-all"
+            >
+              Contato
+            </Link>
+
+            {/* Mobile Contact Information */}
+            <div className="pt-6 border-t border-slate-100 mt-4 space-y-4 text-xs sm:text-sm font-sans normal-case text-slate-600 font-normal">
+              <a href="tel:+5571992009443" className="flex items-center gap-3 py-1 px-4 hover:text-mastertop-blue transition-colors">
+                <Phone size={18} className="text-mastertop-gold" />
+                <span>+55 (71) 9 9200-9443</span>
+              </a>
+              <a href="mailto:contato@mastertop.com.br" className="flex items-center gap-3 py-1 px-4 hover:text-mastertop-blue transition-colors">
+                <Mail size={18} className="text-mastertop-gold" />
+                <span>contato@mastertop.com.br</span>
+              </a>
+              <div className="flex gap-4 items-center px-4 pt-2">
+                <Link href="#" className="hover:text-mastertop-gold transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </Link>
+                <Link href="#" className="hover:text-mastertop-gold transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Main Nav Bar (Blue and Gray) - Desktop */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-4 hidden md:block">
         <div className="flex">
           <div className="bg-mastertop-blue/95 backdrop-blur flex-grow py-4 px-8 rounded-l-lg flex items-center gap-8 font-bold text-[0.8rem] tracking-wider uppercase text-white">

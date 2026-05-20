@@ -51,7 +51,7 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h3 className="text-white font-heading text-lg mb-4 font-semibold uppercase tracking-wider text-sm">Contato</h3>
-            <ul className="space-y-4 font-sans text-sm text-slate-400">
+            <ul className="space-y-4 font-sans text-xs sm:text-sm text-slate-400">
               <li className="flex items-start gap-3">
                 <MapPin className="text-mastertop-gold shrink-0 mt-0.5" size={18} />
                 <a href="https://maps.app.goo.gl/vG33Tskj4pPj9nKx5" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
