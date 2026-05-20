@@ -1,0 +1,26 @@
+[
+  {
+    "id": "oil-platform",
+    "title": "Inovação em Plataformas Petrolíferas",
+    "description": "Desenvolvimento e manutenção de estruturas de alta complexidade para plataformas petrolíferas off-shore.",
+    "icon": "rig"
+  },
+  {
+    "id": "electrical-engineering",
+    "title": "Engenharia Elétrica",
+    "description": "Projetos elétricos industriais e prediais com foco em eficiência energética e segurança estrutural.",
+    "icon": "bolt"
+  },
+  {
+    "id": "geothermal",
+    "title": "Tecnologia Geotérmica",
+    "description": "Soluções inovadoras em energia geotérmica para aquecimento e refrigeração sustentável de grandes complexos.",
+    "icon": "globe"
+  },
+  {
+    "id": "automotive-tech",
+    "title": "Tecnologia Automotiva",
+    "description": "Infraestrutura avançada e instalações de alta precisão para a indústria automobilística.",
+    "icon": "car"
+  }
+]

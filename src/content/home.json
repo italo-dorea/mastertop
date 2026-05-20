@@ -1,0 +1,22 @@
+{
+  "hero": {
+    "title": "Inovação e Solidez para o Futuro",
+    "subtitle": "Com soluções completas em engenharia e construção civil, atuamos em todas as etapas dos projetos: da concepção à operação.",
+    "ctaText": "Conheça Nossos Projetos",
+    "ctaLink": "/obras"
+  },
+  "stats": [
+    {
+      "value": "150+",
+      "label": "Projetos Concluídos"
+    },
+    {
+      "value": "20",
+      "label": "Anos de Experiência"
+    },
+    {
+      "value": "100%",
+      "label": "Compromisso com Qualidade"
+    }
+  ]
+}
