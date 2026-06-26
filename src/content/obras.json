@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Execução de Rede de Drenagem Pluvial",
+    "desc": "Implantação completa de tubulações de concreto de grande porte para canalização e saneamento urbano, garantindo a contenção de alagamentos.",
+    "category": "Saneamento",
+    "image": "/images/obras/obra-drenagem.jpeg"
+  },
+  {
+    "id": 2,
+    "title": "Escoramento Metálico Profundo e Rebaixamento",
+    "desc": "Serviço de escoramento de valas profundas com blindagem metálica de alta segurança integrada com sistema de rebaixamento de lençol freático.",
+    "category": "Engenharia Civil / Infraestrutura",
+    "image": "/images/obras/obra-escoramento-metalico.jpeg"
+  },
+  {
+    "id": 3,
+    "title": "Perfuração Direcional MND (Método Não Destrutivo)",
+    "desc": "Instalação subterrânea de dutos utilizando a tecnologia HDD (Horizontal Directional Drilling), evitando escavações a céu aberto e preservando o tráfego local.",
+    "category": "Engenharia Especial",
+    "image": "/images/obras/obra-mnd-hdd.jpeg"
+  },
+  {
+    "id": 4,
+    "title": "Recuperação e Manutenção de Barragem",
+    "desc": "Serviços técnicos de reforço estrutural, injeção de calda de cimento e tratamento de fissuras em barragens e taludes de concreto.",
+    "category": "Infraestrutura Hidráulica",
+    "image": "/images/obras/obra-recuperacao-barragem.jpeg"
+  },
+  {
+    "id": 5,
+    "title": "Terraplanagem e Preparação de Sítio Industrial",
+    "desc": "Movimentação massiva de terra, nivelamento topográfico, corte, aterro e compactação de solo de alta precisão para assentamento de fundações.",
+    "category": "Infraestrutura",
+    "image": "/images/obras/obra-terraplanagem.jpeg"
+  }
+]

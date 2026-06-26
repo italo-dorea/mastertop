@@ -4,9 +4,9 @@ import Hero from "@/components/Hero";
 import AboutSection from "@/components/AboutSection";
 import StatsCounter from "@/components/StatsCounter";
 import ServicesGrid from "@/components/ServicesGrid";
+import ObrasSectionAccordion from "@/components/ObrasSectionAccordion";
 import ContactCTA from "@/components/ContactCTA";
 import ClientsSection from "@/components/ClientsSection";
-import PhotoGallery from "@/components/PhotoGallery";
 import LocationSection from "@/components/LocationSection";
 
 import homeData from "@/content/home.json";
@@ -27,26 +27,28 @@ export default function Home() {
         
         {/* 2. Sobre / Excelência */}
         <AboutSection />
+
+        {/* 3. Clientes */}
+        <ClientsSection />
         
-        {/* 3. Atuação / Serviços */}
-        <div className="bg-slate-50/85 backdrop-blur-md border-y border-slate-200/50 py-2">
+        {/* 4. Atuação / Serviços */}
+        <div className="bg-mastertop-blue/20 backdrop-blur-md border-y border-white/10 py-2">
           <ServicesGrid services={servicosData} />
         </div>
         
-        {/* 4. Estatísticas */}
+        {/* 5. Estatísticas */}
         <StatsCounter stats={homeData.stats} />
+
+        {/* 6. Obras (Accordion) */}
+        <div className="bg-mastertop-blue/20 backdrop-blur-md border-y border-white/10">
+          <ObrasSectionAccordion />
+        </div>
         
-        {/* 5. Contato CTA ("Vamos conversar?") */}
+        {/* 7. Contato CTA ("Vamos conversar?") */}
         <ContactCTA />
 
-        {/* 6. Localização */}
+        {/* 8. Localização */}
         <LocationSection />
-        
-        {/* 7. Clientes */}
-        <ClientsSection />
-        
-        {/* 8. Galeria */}
-        <PhotoGallery />
         
       </main>
       <Footer />

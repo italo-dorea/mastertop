@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     siteName: "MASTERTOP EMPREENDIMENTOS",
     images: [
       {
-        url: "/logo.jpg",
+        url: "/logo-app.png",
         width: 1200,
         height: 630,
         alt: "MASTERTOP EMPREENDIMENTOS Logo",
@@ -58,11 +58,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MASTERTOP EMPREENDIMENTOS",
     description: "Referência em engenharia e construção civil de alta complexidade.",
-    images: ["/logo.jpg"],
+    images: ["/logo-app.png"],
   },
   icons: {
-    icon: "/logo.jpg",
-    apple: "/logo.jpg",
+    icon: "/logo-app.png",
+    apple: "/logo-app.png",
   }
 };
 
@@ -77,13 +77,20 @@ export default function RootLayout({
       className={`${inter.variable} ${oswald.variable} ${dancingScript.variable} ${montserrat.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col relative">
-        {/* Global Fixed Background Image */}
-        <div 
-          className="fixed inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: "url('/bg-head.jpeg')", zIndex: -1 }}
-        >
-          <div className="absolute inset-0 bg-white/75"></div>
+        {/* Global Fixed Video Background */}
+        <div className="fixed inset-0" style={{ zIndex: -2 }}>
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-contain object-center"
+            poster="/bg-head.jpeg"
+          >
+            <source src="/videos/bg-video.mp4" type="video/mp4" />
+          </video>
         </div>
+        <div className="fixed inset-0 bg-mastertop-dark/75 backdrop-blur-[1px]" style={{ zIndex: -1 }}></div>
         {children}
         <WhatsAppButton />
       </body>

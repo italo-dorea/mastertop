@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-mastertop-blue: #152473;
+  --color-mastertop-blue: #0D1A4A;
+  --color-mastertop-blue-light: #152473;
   --color-mastertop-gold: #D9A036;
-  --color-mastertop-dark: #111827;
-  --color-mastertop-muted: #4B5563;
-  --color-mastertop-light: #F3F4F6;
+  --color-mastertop-dark: #0A0E1A;
+  --color-mastertop-muted: #94A3B8;
+  --color-mastertop-light: #E2E8F0;
   --color-mastertop-white: #FFFFFF;
 
   --font-sans: var(--font-inter);
@@ -20,8 +21,8 @@
 }
 
 body {
-  background: #ffffff;
-  color: #111827;
+  background: #0A0E1A;
+  color: #E2E8F0;
   font-family: var(--font-sans), sans-serif;
 }
 
@@ -97,5 +98,34 @@ body {
 .delay-400 { animation-delay: 400ms; }
 .delay-500 { animation-delay: 500ms; }
 
+/* Scroll bounce animation for Hero scroll indicator */
+.animate-scroll-bounce {
+  animation: scroll-bounce 1.8s ease-in-out infinite;
+}
 
+@keyframes scroll-bounce {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 0.3;
+  }
+}
 
+/* Accessibility: reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in-up,
+  .animate-fade-in,
+  .animate-scale-in,
+  .animate-soft-pulse,
+  .animate-scroll-bounce {
+    animation: none;
+    opacity: 1;
+  }
+
+  video {
+    display: none;
+  }
+}

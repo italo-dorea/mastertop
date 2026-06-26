@@ -22,10 +22,10 @@ export default function Servicos() {
     <>
       <Header />
       <main className="flex-grow">
-        <section className="bg-gradient-to-r from-mastertop-blue/10 via-slate-50/80 to-mastertop-gold/15 backdrop-blur-md border-b border-slate-200/50 pt-64 pb-20 text-center">
+        <section className="bg-mastertop-blue/20 backdrop-blur-md border-b border-white/10 pt-64 pb-20 text-center">
           <div className="max-w-4xl mx-auto px-4 py-10">
-            <h1 className="text-4xl md:text-5xl font-heading font-medium mb-6 bg-gradient-to-r from-mastertop-blue via-slate-800 to-mastertop-gold bg-clip-text text-transparent animate-fade-in-up">Serviços</h1>
-            <p className="text-lg text-slate-600 font-sans animate-fade-in-up delay-100">
+            <h1 className="text-4xl md:text-5xl font-heading font-medium mb-6 text-white animate-fade-in-up">Serviços</h1>
+            <p className="text-lg text-slate-400 font-sans animate-fade-in-up delay-100">
               Soluções completas com excelência e qualidade para os mais variados setores.
             </p>
           </div>
@@ -39,18 +39,18 @@ export default function Servicos() {
                 return (
                   <div 
                     key={service.id} 
-                    className={`flex gap-6 bg-white/95 backdrop-blur-md border border-slate-200 rounded-3xl p-8 shadow-sm hover:shadow-lg hover:border-mastertop-gold/50 transition-all duration-300 animate-scale-in ${
+                    className={`flex gap-6 bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-8 hover:bg-white/10 hover:border-mastertop-gold/30 transition-all duration-300 animate-scale-in ${
                       index === 0 ? 'delay-100' : index === 1 ? 'delay-200' : index === 2 ? 'delay-300' : 'delay-400'
                     }`}
                   >
-                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-mastertop-blue/10 border border-mastertop-blue/20 text-mastertop-blue">
+                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-mastertop-gold/10 border border-mastertop-gold/20 text-mastertop-gold">
                       <IconComponent className="h-7 w-7" aria-hidden="true" />
                     </div>
                     <div>
-                      <h3 className="font-heading font-bold text-xl text-mastertop-dark mb-3">
+                      <h3 className="font-heading font-bold text-xl text-white mb-3">
                         {service.title}
                       </h3>
-                      <p className="text-slate-600 font-sans leading-relaxed">
+                      <p className="text-slate-400 font-sans leading-relaxed">
                         {service.description}
                       </p>
                     </div>

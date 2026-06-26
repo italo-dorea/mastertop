@@ -1,26 +1,32 @@
 [
   {
-    "id": "oil-platform",
-    "title": "Inovação em Plataformas Petrolíferas",
-    "description": "Desenvolvimento e manutenção de estruturas de alta complexidade para plataformas petrolíferas off-shore.",
-    "icon": "rig"
+    "id": "saneamento",
+    "title": "Saneamento",
+    "description": "Implantação de redes de drenagem pluvial, tubulações de grande porte e infraestrutura de saneamento urbano.",
+    "icon": "droplets"
   },
   {
-    "id": "electrical-engineering",
-    "title": "Engenharia Elétrica",
-    "description": "Projetos elétricos industriais e prediais com foco em eficiência energética e segurança estrutural.",
-    "icon": "bolt"
+    "id": "engenharia-civil",
+    "title": "Engenharia Civil / Infraestrutura",
+    "description": "Escoramento metálico profundo, rebaixamento de lençol freático e obras civis de alta complexidade.",
+    "icon": "building"
   },
   {
-    "id": "geothermal",
-    "title": "Tecnologia Geotérmica",
-    "description": "Soluções inovadoras em energia geotérmica para aquecimento e refrigeração sustentável de grandes complexos.",
-    "icon": "globe"
+    "id": "engenharia-especial",
+    "title": "Engenharia Especial",
+    "description": "Perfuração direcional MND (HDD), instalações subterrâneas e métodos não destrutivos de alta precisão.",
+    "icon": "drill"
   },
   {
-    "id": "automotive-tech",
-    "title": "Tecnologia Automotiva",
-    "description": "Infraestrutura avançada e instalações de alta precisão para a indústria automobilística.",
-    "icon": "car"
+    "id": "infraestrutura-hidraulica",
+    "title": "Infraestrutura Hidráulica",
+    "description": "Recuperação e manutenção de barragens, reforço estrutural e tratamento de fissuras em concreto.",
+    "icon": "waves"
+  },
+  {
+    "id": "terraplanagem",
+    "title": "Terraplanagem e Infraestrutura",
+    "description": "Movimentação de terra, nivelamento topográfico, corte, aterro e compactação de solo para fundações.",
+    "icon": "mountain"
   }
 ]
