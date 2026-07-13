@@ -139,11 +139,11 @@ export default function Sobre() {
               </div>
               <div>
                 <h2 className="text-mastertop-blue font-subheading text-sm font-bold tracking-widest uppercase mb-3 animate-fade-in-up">Inovação</h2>
-                <h3 className="text-3xl font-heading font-bold mb-6 bg-gradient-to-r from-mastertop-blue via-slate-800 to-mastertop-gold bg-clip-text text-transparent animate-fade-in-up delay-100">
-                  Liderando a transformação digital
+                <h3 className="text-3xl font-heading font-bold mb-6 text-white animate-fade-in-up delay-100">
+                  Soluções modernas para projetos exigentes
                 </h3>
                 <p className="text-slate-300 font-sans text-lg leading-relaxed mb-6 animate-fade-in-up delay-200">
-                  Utilizamos metodologias avançadas como modelagem BIM, inteligência de dados aplicada ao planejamento e maquinário de altíssima precisão. Isso reduz prazos de entrega, eleva os padrões de controle de qualidade e garante exatidão em cada etapa do projeto.
+                  Buscamos constantemente as melhores práticas e ferramentas disponíveis no mercado para garantir eficiência, qualidade e segurança em cada projeto. Nossa equipe está sempre atualizada para oferecer soluções alinhadas às demandas da engenharia moderna.
                 </p>
               </div>
             </div>

@@ -36,8 +36,8 @@ export default function Header() {
               <Phone size={16} className="text-white" />
             </div>
             <div className="flex flex-col">
-              <span className="text-[0.65rem] font-bold uppercase tracking-wider text-white/60">Contato / WhatsApp</span>
-              <span className="font-bold text-white">+55 (71) 99945-4369</span>
+              <span className="text-[0.65rem] font-bold uppercase tracking-wider text-white/60">Contato</span>
+              <span className="font-bold text-white">(71) 99945-4369</span>
             </div>
           </a>
 
@@ -46,7 +46,7 @@ export default function Header() {
               <Mail size={16} className="text-white" />
             </div>
             <div className="flex flex-col">
-              <span className="text-[0.65rem] font-bold uppercase tracking-wider text-white/60">E-mail Comercial</span>
+              <span className="text-[0.65rem] font-bold uppercase tracking-wider text-white/60">E-mail</span>
               <span className="font-bold text-white">comercial@mastertopempreendimentos.com.br</span>
             </div>
           </a>
