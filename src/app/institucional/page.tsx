@@ -15,7 +15,7 @@ export default function Sobre() {
     <>
       <Header />
       <main className="flex-grow">
-        <section className="bg-mastertop-blue/20 backdrop-blur-md border-b border-white/10 pt-64 pb-20 text-center">
+        <section className="bg-mastertop-blue/20 backdrop-blur-md border-b border-white/10 pt-36 sm:pt-48 md:pt-64 pb-20 text-center">
           <div className="max-w-4xl mx-auto px-4">
             <h1 className="text-4xl md:text-5xl font-heading font-medium mb-6 text-white animate-fade-in-up">Quem Somos</h1>
             <p className="text-lg text-slate-300 font-sans animate-fade-in-up delay-100">
@@ -42,7 +42,7 @@ export default function Sobre() {
                   </p>
                 </div>
               </div>
-              <div className="rounded-2xl h-96 relative overflow-hidden shadow-lg">
+              <div className="rounded-2xl h-64 sm:h-80 md:h-96 relative overflow-hidden shadow-lg">
                 <img
                   src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop"
                   alt="Construção Civil MASTERTOP"
@@ -104,7 +104,7 @@ export default function Sobre() {
         <section id="sustentabilidade" className="py-20 bg-transparent scroll-mt-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-16 items-center">
-              <div className="rounded-2xl h-96 relative overflow-hidden shadow-lg md:order-2">
+              <div className="rounded-2xl h-64 sm:h-80 md:h-96 relative overflow-hidden shadow-lg md:order-2">
                 <img
                   src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=800&auto=format&fit=crop"
                   alt="Sustentabilidade e Natureza"
@@ -129,7 +129,7 @@ export default function Sobre() {
         <section id="inovacao" className="py-20 bg-mastertop-blue/20 backdrop-blur-md border-y border-white/10 scroll-mt-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-16 items-center">
-              <div className="rounded-2xl h-96 relative overflow-hidden shadow-lg">
+              <div className="rounded-2xl h-64 sm:h-80 md:h-96 relative overflow-hidden shadow-lg">
                 <img
                   src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800&auto=format&fit=crop"
                   alt="Tecnologia e Engenharia Moderna"

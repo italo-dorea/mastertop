@@ -9,7 +9,7 @@ export default function LocationSection() {
           <ScrollReveal direction="left">
             <h2 className="text-mastertop-gold font-subheading text-sm font-bold tracking-widest uppercase mb-3">Onde estamos</h2>
             <h3 className="text-3xl md:text-4xl font-heading font-bold mb-8 text-white hover:text-mastertop-light transition-colors duration-300">
-              Venha nos visitar
+              Localização
             </h3>
             
             <div className="space-y-8 font-sans text-slate-300 text-lg">
@@ -29,7 +29,7 @@ export default function LocationSection() {
                 </div>
                 <div>
                   <h4 className="font-bold text-white mb-1">Telefone / WhatsApp</h4>
-                  <p className="text-slate-400">(71) 9 9200-9443</p>
+                  <p className="text-slate-400">(71) 99945-4369</p>
                 </div>
               </div>
 
@@ -46,7 +46,7 @@ export default function LocationSection() {
           </ScrollReveal>
           
           <ScrollReveal direction="right" delay={200}>
-            <div className="h-[400px] w-full rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-mastertop-gold/30 transition-all duration-500 hover:shadow-2xl">
+            <div className="h-[280px] sm:h-[360px] lg:h-[400px] w-full rounded-2xl overflow-hidden shadow-lg border border-white/10 hover:border-mastertop-gold/30 transition-all duration-500 hover:shadow-2xl">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15570.672535032034!2d-38.30396078335039!3d-12.62324449999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7165d0aeaaaaaab%3A0x31e6d594018bf9e0!2sMastertop%20Empreendimentos%20Eireli!5e0!3m2!1spt-BR!2sbr!4v1715634567890!5m2!1spt-BR!2sbr" 
                 width="100%" 

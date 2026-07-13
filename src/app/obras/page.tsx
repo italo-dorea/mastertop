@@ -13,7 +13,7 @@ export default function Obras() {
     <>
       <Header />
       <main className="flex-grow">
-        <section className="bg-mastertop-dark/40 backdrop-blur-md border-b border-white/10 pt-64 pb-20 text-center">
+        <section className="bg-mastertop-dark/40 backdrop-blur-md border-b border-white/10 pt-36 sm:pt-48 md:pt-64 pb-20 text-center">
           <div className="max-w-4xl mx-auto px-4">
             <h1 className="text-4xl md:text-5xl font-heading font-medium mb-6 text-white animate-fade-in-up">Obras Concluídas</h1>
             <p className="text-lg text-slate-400 font-sans animate-fade-in-up delay-100">

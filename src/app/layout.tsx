@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     template: "%s | MASTERTOP EMPREENDIMENTOS"
   },
   description: "MASTERTOP EMPREENDIMENTOS - Referência nacional em engenharia de alta complexidade, construção civil, montagem industrial, engenharia elétrica e infraestrutura.",
-  keywords: ["Mastertop", "Empreendimentos", "Engenharia", "Construção Civil", "Instalações Industriais", "Plataformas Petrolíferas", "Engenharia Elétrica", "Tecnologia", "Bahia", "Dias D'Ávila"],
+  keywords: ["Mastertop", "GCEC", "Mastertop Empreendimentos", "Empreendimentos", "Engenharia", "Construção Civil", "Instalações Industriais", "Plataformas Petrolíferas", "Engenharia Elétrica", "Tecnologia", "Bahia", "Dias D'Ávila", "Escoramento Metálico", "Escoramento de Valas", "Locação de Bomba Rebaixamento", "Bomba de Rebaixamento de Lençol Freático", "MND", "Microperfuração Não Destrutiva", "HDD", "Hdd Furo Direcional", "Obras de Saneamento", "Saneamento Básico", "Solda PEAD", "Soldagem de Tubulação PEAD", "Infraestrutura"],
   authors: [{ name: "MASTERTOP" }],
   creator: "MASTERTOP",
   publisher: "MASTERTOP",

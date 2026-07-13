@@ -12,7 +12,7 @@ export default function TrabalheConosco() {
     <>
       <Header />
       <main className="flex-grow">
-        <section className="bg-mastertop-blue/20 backdrop-blur-md border-b border-white/10 pt-64 pb-20 text-center">
+        <section className="bg-mastertop-blue/20 backdrop-blur-md border-b border-white/10 pt-36 sm:pt-48 md:pt-64 pb-20 text-center">
           <div className="max-w-4xl mx-auto px-4">
             <h1 className="text-4xl md:text-5xl font-heading font-medium mb-6 text-white animate-fade-in-up">Trabalhe Conosco</h1>
             <p className="text-lg text-slate-400 font-sans animate-fade-in-up delay-100">
@@ -25,7 +25,7 @@ export default function TrabalheConosco() {
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-white/5 border border-white/10 p-8 rounded-2xl">
                <h2 className="text-2xl font-heading font-bold mb-6 text-white">Envie seu currículo</h2>
-               <form name="trabalhe-conosco" method="POST" data-netlify="true" className="space-y-6 font-sans">
+               <form name="trabalhe-conosco" method="POST" data-netlify="true" encType="multipart/form-data" className="space-y-6 font-sans">
                   <input type="hidden" name="form-name" value="trabalhe-conosco" />
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-1">Nome Completo</label>
@@ -52,6 +52,20 @@ export default function TrabalheConosco() {
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-slate-300 mb-1">Mensagem ou Link do LinkedIn</label>
                     <textarea id="message" name="message" rows={4} className="w-full px-4 py-2 border border-white/20 bg-white text-gray-900 rounded-lg focus:ring-2 focus:ring-mastertop-gold focus:border-mastertop-gold outline-none transition-all placeholder-gray-400" placeholder="Fale um pouco sobre você..." />
+                  </div>
+                  <div>
+                    <label htmlFor="curriculo" className="block text-sm font-medium text-slate-300 mb-1">
+                      Anexar Currículo <span className="text-slate-500 font-normal">(PDF, DOC ou DOCX — máx. 5MB)</span>
+                    </label>
+                    <div className="relative">
+                      <input
+                        type="file"
+                        id="curriculo"
+                        name="curriculo"
+                        accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                        className="w-full px-4 py-2 border border-white/20 bg-white text-gray-900 rounded-lg focus:ring-2 focus:ring-mastertop-gold focus:border-mastertop-gold outline-none transition-all file:mr-4 file:py-1 file:px-3 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-mastertop-gold/20 file:text-mastertop-gold hover:file:bg-mastertop-gold/30 cursor-pointer"
+                      />
+                    </div>
                   </div>
                   <button type="submit" className="w-full py-3 px-6 bg-white/10 border border-white/20 text-white font-medium rounded-lg hover:bg-white hover:text-mastertop-dark transition-colors">
                     Enviar Candidatura

@@ -13,7 +13,7 @@ export default function StatsCounter({ stats }: StatsCounterProps) {
   return (
     <section className="bg-transparent py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+        <dl className="grid grid-cols-1 sm:grid-cols-3 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
           {stats.map((stat, index) => (
             <ScrollReveal key={index} delay={index * 150} direction="up">
               <div className="mx-auto flex max-w-xs flex-col gap-y-4 group hover:scale-105 transition-transform duration-300">
