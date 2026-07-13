@@ -50,7 +50,7 @@ export default function TrabalheConosco() {
                     </select>
                   </div>
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-slate-300 mb-1">Mensagem ou Link do LinkedIn</label>
+                    <label htmlFor="message" className="block text-sm font-medium text-slate-300 mb-1">Mensagem</label>
                     <textarea id="message" name="message" rows={4} className="w-full px-4 py-2 border border-white/20 bg-white text-gray-900 rounded-lg focus:ring-2 focus:ring-mastertop-gold focus:border-mastertop-gold outline-none transition-all placeholder-gray-400" placeholder="Fale um pouco sobre você..." />
                   </div>
                   <div>

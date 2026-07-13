@@ -11,7 +11,7 @@ interface HeroProps {
 
 export default function Hero({ title, subtitle, ctaText, ctaLink }: HeroProps) {
   return (
-    <section className="relative w-full min-h-screen flex items-center overflow-hidden pt-28 sm:pt-36 md:pt-44 lg:pt-52 pb-20">
+    <section className="relative w-full min-h-screen flex items-center overflow-hidden pt-20 sm:pt-28 md:pt-36 lg:pt-44 xl:pt-52 pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
