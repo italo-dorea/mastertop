@@ -28,8 +28,8 @@ export default function ContactCTA() {
                     </div>
                     <div className="flex flex-col gap-1">
                       <div className="text-slate-500 text-sm font-sans mb-1 uppercase tracking-wider">Telefones de Contato</div>
-                      <a href="tel:+5571999454369" className="text-white font-heading font-bold text-xl hover:text-mastertop-gold transition-colors">+55 (71) 99945-4369</a>
-                      <a href="tel:+557132171471" className="text-white font-heading font-bold text-lg hover:text-mastertop-gold transition-colors">+55 (71) 3217-1471</a>
+                      <a href="tel:+5571999454369" className="text-white font-heading font-bold text-lg sm:text-xl hover:text-mastertop-gold transition-colors">+55 (71) 99945-4369</a>
+                      <a href="tel:+557132171471" className="text-white font-heading font-bold text-lg sm:text-xl hover:text-mastertop-gold transition-colors">+55 (71) 3217-1471</a>
                     </div>
                   </div>
                   
@@ -39,7 +39,7 @@ export default function ContactCTA() {
                     </div>
                     <div className="flex flex-col gap-1 min-w-0">
                       <div className="text-slate-500 text-sm font-sans mb-1 uppercase tracking-wider">Envie um e-mail</div>
-                      <a href="mailto:comercial@mastertopempreendimentos.com.br" className="text-white font-heading font-bold text-sm sm:text-base hover:text-mastertop-gold transition-colors break-all">comercial@mastertopempreendimentos.com.br</a>
+                      <a href="mailto:comercial@mastertopempreendimentos.com.br" className="text-white font-heading font-bold text-xs sm:text-sm hover:text-mastertop-gold transition-colors break-all">comercial@mastertopempreendimentos.com.br</a>
                       <a href="mailto:carlosaraujo@mastertopempreendimentos.com.br" className="text-white font-heading font-bold text-xs sm:text-sm hover:text-mastertop-gold transition-colors break-all">carlosaraujo@mastertopempreendimentos.com.br</a>
                     </div>
                   </div>

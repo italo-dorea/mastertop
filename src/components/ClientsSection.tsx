@@ -16,7 +16,7 @@ export default function ClientsSection() {
             Parceiros de Confiança
           </h2>
           <h3 className="text-3xl md:text-4xl font-heading font-bold text-white">
-            Quem Confia em Nós
+            Quem Confia em nosso trabalho
           </h3>
         </ScrollReveal>
 
