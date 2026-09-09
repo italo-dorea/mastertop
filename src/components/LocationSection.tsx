@@ -12,7 +12,7 @@ export default function LocationSection() {
               Localização
             </h3>
             
-            <div className="space-y-8 font-sans text-slate-300 text-lg">
+            <div className="space-y-6 sm:space-y-8 font-sans text-slate-300 text-sm sm:text-lg">
               <div className="flex gap-4 items-start group hover:-translate-y-0.5 transition-transform duration-300">
                 <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-mastertop-gold shrink-0 border border-white/10 group-hover:scale-110 transition-transform duration-300">
                   <MapPin size={24} />
@@ -28,8 +28,8 @@ export default function LocationSection() {
                   <Phone size={24} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-white mb-1">Telefone / WhatsApp</h4>
-                  <p className="text-slate-400">(71) 99945-4369</p>
+                  <h4 className="font-bold text-white mb-1">WhatsApp</h4>
+                  <a href="https://wa.me/5571999454369" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">(71) 99945-4369</a>
                 </div>
               </div>
 

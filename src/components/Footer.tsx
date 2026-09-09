@@ -44,7 +44,6 @@ export default function Footer() {
               <li><Link href="/servicos" className="hover:text-mastertop-gold transition-colors">Serviços</Link></li>
               <li><Link href="/trabalhe-conosco" className="hover:text-mastertop-gold transition-colors">Trabalhe Conosco</Link></li>
               <li><Link href="/contato" className="hover:text-mastertop-gold transition-colors">Fale com a gente</Link></li>
-              <li><Link href="/admin" className="hover:text-mastertop-gold transition-colors">Painel Administrativo</Link></li>
             </ul>
           </div>
 
@@ -58,25 +57,13 @@ export default function Footer() {
                   Av. Ayrton Senna, n° 831, SL 04<br />Petrópolis, Dias D'Ávila/BA<br />CEP: 42850-000
                 </a>
               </li>
-              <li className="flex flex-col gap-2">
-                <div className="flex items-center gap-3">
-                  <Phone className="text-mastertop-gold shrink-0" size={18} />
-                  <span className="font-semibold text-white/90 text-xs">Telefones:</span>
-                </div>
-                <div className="pl-7 flex flex-col gap-1 text-slate-400 text-sm">
-                  <a href="tel:+5571999454369" className="hover:text-white transition-colors">+55 (71) 99945-4369 (Celular / WhatsApp)</a>
-                  <a href="tel:+557132171471" className="hover:text-white transition-colors">+55 (71) 3217-1471 (Fixo)</a>
-                </div>
+              <li className="flex items-center gap-3">
+                <Phone className="text-mastertop-gold shrink-0" size={18} />
+                <a href="https://wa.me/5571999454369" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">(71) 99945-4369 (WhatsApp)</a>
               </li>
-              <li className="flex flex-col gap-2">
-                <div className="flex items-center gap-3">
-                  <Mail className="text-mastertop-gold shrink-0" size={18} />
-                  <span className="font-semibold text-white/90 text-xs">E-mails:</span>
-                </div>
-                <div className="pl-7 flex flex-col gap-1 text-slate-400 text-sm break-all">
-                  <a href="mailto:comercial@mastertopempreendimentos.com.br" className="hover:text-white transition-colors">comercial@mastertopempreendimentos.com.br</a>
-                  <a href="mailto:carlosaraujo@mastertopempreendimentos.com.br" className="hover:text-white transition-colors">carlosaraujo@mastertopempreendimentos.com.br</a>
-                </div>
+              <li className="flex items-center gap-3 min-w-0">
+                <Mail className="text-mastertop-gold shrink-0" size={18} />
+                <a href="mailto:comercial@mastertopempreendimentos.com.br" className="hover:text-white transition-colors break-words">comercial@mastertopempreendimentos.com.br</a>
               </li>
             </ul>
           </div>

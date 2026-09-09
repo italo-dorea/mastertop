@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PhoneMaskInput from "@/components/PhoneMaskInput";
 
 export const metadata: Metadata = {
   title: "Trabalhe Conosco",
@@ -36,8 +37,8 @@ export default function TrabalheConosco() {
                     <input type="email" id="email" name="email" required className="w-full px-4 py-2 border border-white/20 bg-white text-gray-900 rounded-lg focus:ring-2 focus:ring-mastertop-gold focus:border-mastertop-gold outline-none transition-all placeholder-gray-400" placeholder="seu@email.com" />
                   </div>
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-slate-300 mb-1">Telefone</label>
-                    <input type="tel" id="phone" name="phone" className="w-full px-4 py-2 border border-white/20 bg-white text-gray-900 rounded-lg focus:ring-2 focus:ring-mastertop-gold focus:border-mastertop-gold outline-none transition-all placeholder-gray-400" placeholder="(71) 99999-9999" />
+                    <label htmlFor="phone" className="block text-sm font-medium text-slate-300 mb-1">Telefone / WhatsApp</label>
+                    <PhoneMaskInput id="phone" name="phone" className="w-full px-4 py-2 border border-white/20 bg-white text-gray-900 rounded-lg focus:ring-2 focus:ring-mastertop-gold focus:border-mastertop-gold outline-none transition-all placeholder-gray-400" />
                   </div>
                   <div>
                     <label htmlFor="role" className="block text-sm font-medium text-slate-300 mb-1">Área de Interesse</label>

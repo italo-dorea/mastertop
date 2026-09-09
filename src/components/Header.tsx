@@ -31,12 +31,12 @@ export default function Header() {
             </a>
           </div>
 
-          <a href="tel:+5571999454369" className="flex items-center gap-3 hover:text-mastertop-gold transition-colors">
+          <a href="https://wa.me/5571999454369" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-mastertop-gold transition-colors">
             <div className="border border-white/40 rounded-full p-2">
               <Phone size={16} className="text-white" />
             </div>
             <div className="flex flex-col">
-              <span className="text-[0.65rem] font-bold uppercase tracking-wider text-white/60">Contato</span>
+              <span className="text-[0.65rem] font-bold uppercase tracking-wider text-white/60">WhatsApp</span>
               <span className="font-bold text-white">(71) 99945-4369</span>
             </div>
           </a>
@@ -109,20 +109,19 @@ export default function Header() {
             </Link>
 
             {/* Mobile Contact Information */}
-            <div className="pt-6 border-t border-slate-100 mt-4 space-y-4 text-xs sm:text-sm font-sans normal-case text-slate-600 font-normal">
-              <a href="tel:+5571999454369" className="flex items-center gap-3 py-1 px-4 hover:text-mastertop-blue transition-colors">
-                <Phone size={18} className="text-mastertop-gold" />
-                <span>+55 (71) 99945-4369</span>
+            <div className="pt-6 border-t border-slate-100 mt-4 space-y-3 text-xs font-sans normal-case text-slate-600 font-normal">
+              <a href="https://wa.me/5571999454369" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 py-1 px-4 hover:text-mastertop-blue transition-colors">
+                <Phone size={16} className="text-mastertop-gold shrink-0" />
+                <span>(71) 99945-4369 (WhatsApp)</span>
               </a>
               <a href="mailto:comercial@mastertopempreendimentos.com.br" className="flex items-center gap-3 py-1 px-4 hover:text-mastertop-blue transition-colors">
-                <Mail size={18} className="text-mastertop-gold" />
-                <span>comercial@mastertopempreendimentos.com.br</span>
+                <Mail size={16} className="text-mastertop-gold shrink-0" />
+                <span className="break-words">comercial@mastertopempreendimentos.com.br</span>
               </a>
-              <div className="flex gap-4 items-center px-4 pt-2">
-                <a href="https://www.instagram.com/mastertopempreendimentos/" target="_blank" rel="noopener noreferrer" className="hover:text-mastertop-gold transition-colors">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
-                </a>
-              </div>
+              <a href="https://www.instagram.com/mastertopempreendimentos/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 py-1 px-4 hover:text-mastertop-blue transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-instagram text-mastertop-gold shrink-0"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg>
+                <span>@mastertopempreendimentos</span>
+              </a>
             </div>
           </div>
         </div>

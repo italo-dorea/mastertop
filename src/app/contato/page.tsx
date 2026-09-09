@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Mail, MapPin, Phone } from "lucide-react";
+import PhoneMaskInput from "@/components/PhoneMaskInput";
 
 export const metadata: Metadata = {
   title: "Fale Conosco",
@@ -44,31 +45,27 @@ export default function Contato() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="bg-white/5 p-4 rounded-xl text-mastertop-gold shrink-0 border border-white/10">
-                      <Phone size={24} />
+                    <div className="bg-white/5 p-3 sm:p-4 rounded-xl text-mastertop-gold shrink-0 border border-white/10">
+                      <Phone size={20} className="sm:hidden" />
+                      <Phone size={24} className="hidden sm:block" />
                     </div>
-                    <div>
-                      <h3 className="font-heading font-semibold text-lg text-white">Telefones de Contato</h3>
-                      <a href="tel:+5571999454369" className="block text-slate-300 mt-1 font-sans text-sm sm:text-base hover:text-white transition-colors">
-                        +55 (71) 99945-4369 (Celular / WhatsApp)
-                      </a>
-                      <a href="tel:+557132171471" className="block text-slate-300 mt-1 font-sans text-sm sm:text-base hover:text-white transition-colors">
-                        +55 (71) 3217-1471 (Fixo)
+                    <div className="min-w-0">
+                      <h3 className="font-heading font-semibold text-base sm:text-lg text-white">WhatsApp</h3>
+                      <a href="https://wa.me/5571999454369" target="_blank" rel="noopener noreferrer" className="block text-slate-300 mt-1 font-sans text-sm sm:text-base hover:text-white transition-colors">
+                        (71) 99945-4369
                       </a>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="bg-white/5 p-4 rounded-xl text-mastertop-gold shrink-0 border border-white/10">
-                      <Mail size={24} />
+                    <div className="bg-white/5 p-3 sm:p-4 rounded-xl text-mastertop-gold shrink-0 border border-white/10">
+                      <Mail size={20} className="sm:hidden" />
+                      <Mail size={24} className="hidden sm:block" />
                     </div>
-                    <div>
-                      <h3 className="font-heading font-semibold text-lg text-white">E-mails</h3>
-                      <a href="mailto:comercial@mastertopempreendimentos.com.br" className="block text-slate-300 mt-1 font-sans text-sm sm:text-base hover:text-white transition-colors break-all">
-                        comercial@mastertopempreendimentos.com.br (Comercial)
-                      </a>
-                      <a href="mailto:carlosaraujo@mastertopempreendimentos.com.br" className="block text-slate-300 mt-1 font-sans text-sm sm:text-base hover:text-white transition-colors break-all">
-                        carlosaraujo@mastertopempreendimentos.com.br (Diretoria)
+                    <div className="min-w-0">
+                      <h3 className="font-heading font-semibold text-base sm:text-lg text-white">E-mail</h3>
+                      <a href="mailto:comercial@mastertopempreendimentos.com.br" className="block text-slate-300 mt-1 font-sans text-xs sm:text-base hover:text-white transition-colors break-words">
+                        comercial@mastertopempreendimentos.com.br
                       </a>
                     </div>
                   </div>
@@ -88,8 +85,8 @@ export default function Contato() {
                     <input type="email" id="email" name="email" required className="mt-2 block w-full rounded-xl border border-white/20 bg-white text-gray-900 shadow-sm focus:border-mastertop-gold focus:ring-mastertop-gold py-3 px-4 outline-none placeholder-gray-400" placeholder="seu@email.com" />
                   </div>
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-slate-300">Telefone</label>
-                    <input type="tel" id="phone" name="phone" className="mt-2 block w-full rounded-xl border border-white/20 bg-white text-gray-900 shadow-sm focus:border-mastertop-gold focus:ring-mastertop-gold py-3 px-4 outline-none placeholder-gray-400" placeholder="(71) 99999-9999" />
+                    <label htmlFor="phone" className="block text-sm font-medium text-slate-300">Telefone / WhatsApp</label>
+                    <PhoneMaskInput id="phone" name="phone" className="mt-2 block w-full rounded-xl border border-white/20 bg-white text-gray-900 shadow-sm focus:border-mastertop-gold focus:ring-mastertop-gold py-3 px-4 outline-none placeholder-gray-400" />
                   </div>
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-slate-300">Mensagem</label>
