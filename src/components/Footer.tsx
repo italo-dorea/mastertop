@@ -54,8 +54,8 @@ export default function Footer() {
             <ul className="space-y-4 font-sans text-xs sm:text-sm text-slate-400">
               <li className="flex items-start gap-3">
                 <MapPin className="text-mastertop-gold shrink-0 mt-0.5" size={18} />
-                <a href="https://maps.app.goo.gl/vG33Tskj4pPj9nKx5" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-                  Av. Ayrton Senna, n° 831, SL 04<br />Petrópolis, Dias D'Ávila/BA<br />CEP: 42850-000
+                <a href="https://maps.app.goo.gl/vG33Tskj4pPj9nKx5" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors justify-mobile block">
+                  Av. Ayrton Senna, n° 831, SL 04<br />Petrópolis, Dias D&apos;Ávila/BA<br />CEP: 42850-000
                 </a>
               </li>
               <li className="flex items-center gap-3">

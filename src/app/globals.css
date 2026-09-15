@@ -114,6 +114,19 @@ body {
   }
 }
 
+/* Mobile: justify running text for tighter, more organized line breaks */
+@media (max-width: 639px) {
+  main p,
+  footer p,
+  .justify-mobile {
+    text-align: justify;
+    text-align-last: left;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    overflow-wrap: break-word;
+  }
+}
+
 /* Accessibility: reduce motion for users who prefer it */
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-in-up,
