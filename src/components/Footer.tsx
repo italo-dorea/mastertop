@@ -42,6 +42,7 @@ export default function Footer() {
             <ul className="space-y-3 font-sans text-sm text-slate-400">
               <li><Link href="/obras" className="hover:text-mastertop-gold transition-colors">Obras</Link></li>
               <li><Link href="/servicos" className="hover:text-mastertop-gold transition-colors">Serviços</Link></li>
+              <li><Link href="/projeto-imobiliario" className="hover:text-mastertop-gold transition-colors">Projeto Imobiliário</Link></li>
               <li><Link href="/trabalhe-conosco" className="hover:text-mastertop-gold transition-colors">Trabalhe Conosco</Link></li>
               <li><Link href="/contato" className="hover:text-mastertop-gold transition-colors">Fale com a gente</Link></li>
             </ul>

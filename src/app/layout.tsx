@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Oswald, Dancing_Script, Montserrat } from "next/font/google";
 import "./globals.css";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import SiteBackground from "@/components/SiteBackground";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -77,20 +78,7 @@ export default function RootLayout({
       className={`${inter.variable} ${oswald.variable} ${dancingScript.variable} ${montserrat.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col relative">
-        {/* Global Fixed Video Background */}
-        <div className="fixed inset-0" style={{ zIndex: -2 }}>
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-contain object-center"
-            poster="/bg-head.jpeg"
-          >
-            <source src="/videos/bg-video.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div className="fixed inset-0 bg-mastertop-dark/75 backdrop-blur-[1px]" style={{ zIndex: -1 }}></div>
+        <SiteBackground />
         {children}
         <WhatsAppButton />
       </body>

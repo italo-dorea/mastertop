@@ -94,6 +94,13 @@ export default function Header() {
               Serviços
             </Link>
             <Link
+              href="/projeto-imobiliario"
+              onClick={() => setIsOpen(false)}
+              className="block py-2.5 px-4 rounded-xl hover:bg-mastertop-blue/5 text-mastertop-dark hover:text-mastertop-blue transition-all"
+            >
+              Projeto Imobiliário
+            </Link>
+            <Link
               href="/trabalhe-conosco"
               onClick={() => setIsOpen(false)}
               className="block py-2.5 px-4 rounded-xl hover:bg-mastertop-blue/5 text-mastertop-dark hover:text-mastertop-blue transition-all"
@@ -135,6 +142,7 @@ export default function Header() {
             <Link href="/institucional" className="hover:text-mastertop-gold transition-colors">Institucional</Link>
             <Link href="/obras" className="hover:text-mastertop-gold transition-colors">Obras</Link>
             <Link href="/servicos" className="hover:text-mastertop-gold transition-colors">Serviços</Link>
+            <Link href="/projeto-imobiliario" className="hover:text-mastertop-gold transition-colors">Projeto Imobiliário</Link>
             <Link href="/trabalhe-conosco" className="hover:text-mastertop-gold transition-colors">Trabalhe Conosco</Link>
           </div>
 
